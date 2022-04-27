@@ -8,14 +8,11 @@ namespace Linked_List
     {
         static void Main(string[] args)
         {
-            LinkedList<int> list = new LinkedList<int>(); // creating a object of in built LinkedList generic class 
-            list.AddFirst(56); // Calling method of Linked List generic class to add 56 at first
-            list.AddLast(30); // Calling method of Linked List generic class to add 30 at last
-            list.AddLast(70); // Calling method of Linked List generic class to add 70 at last
-            foreach (int element in list)
-            {
-                Console.WriteLine(element); // Printing all the element of linked list
-            }
+            CustomLinkedList<int> list = new CustomLinkedList<int>(); 
+            list.AddFirst(70); 
+            list.AddFirst(30); 
+            list.AddFirst(56); 
+            list.DisplayElement();
             Console.ReadLine();
         }
     }
